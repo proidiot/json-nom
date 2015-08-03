@@ -20,9 +20,19 @@
  */
 
 #include <config.h>
+#include <argp.h>
+
+const char* argp_program_version = PACKAGE_STRING;
+
+const char* argp_program_bug_address = PACKAGE_BUGREPORT;
+
+static char doc[] = "JSON Nested Object Masker";
+
+static struct argp argp = {0, 0, 0, doc};
 
 int main(int argc, char** argv)
 {
+	argp_parse(&argp, argc, argv, 0, 0, 0);
 	return 0;
 }
 
