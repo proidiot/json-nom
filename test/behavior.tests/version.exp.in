@@ -21,7 +21,7 @@ if 0 {
 
 set timeout 5
 
-spawn ../src/json-nom
+spawn ../src/json-nom --version
 
 expect {
 	"@PACKAGE_STRING@" {pass "Version test is successful"}
