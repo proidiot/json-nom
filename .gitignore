@@ -30,3 +30,47 @@
 
 # Debug files
 *.dSYM/
+
+# vim files
+*~
+*.swp
+
+# gcov files
+*.gcda
+*.gcno
+*.gcov
+
+# GNU build files
+/config.h
+/config.log
+/config.status
+.deps
+Makefile
+stamp-h*
+
+# DejaGnu files
+/test/*.sum
+/test/*.log
+/test/site.bak
+/test/site.exp
+
+# GNU autotools extra files
+/aclocal.m4
+/autom4te.cache
+/autoscan.log
+/configure.scan
+
+# GNU autotools generated files
+/compile
+/config.h.in
+/configure
+/depcomp
+/INSTALL
+/install-sh
+/missing
+Makefile.in
+
+# package specific files
+/src/json-nom
+/test/behavior.tests/version.exp
+
