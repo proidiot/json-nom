@@ -32,10 +32,12 @@ AC_PROG_CC
 # Checks for libraries.
 
 # Checks for header files.
+AC_CHECK_HEADER([argp.h], , AC_MSG_ERROR([Unable to find argp.h]))
 
 # Checks for typedefs, structures, and compiler characteristics.
 
 # Checks for library functions.
+AC_SEARCH_LIBS([argp_parse], , , AC_MSG_ERROR([Unable to find argp_parse function]))
 
 AC_CONFIG_FILES([Makefile
                  src/Makefile
