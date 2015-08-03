@@ -1,4 +1,4 @@
-# json-nom [![Stories in Ready](https://badge.waffle.io/proidiot/json-nom.png?label=ready&title=Ready)](https://waffle.io/proidiot/json-nom)
+# json-nom [![Stories in Ready](https://badge.waffle.io/proidiot/json-nom.png?label=ready&title=Ready)](https://waffle.io/proidiot/json-nom) [![Build Status](https://travis-ci.org/proidiot/json-nom.svg)](https://travis-ci.org/proidiot/json-nom)
 **JSON Nested Object Masker** is a small program that will recursively take a [JSON](https://json.org/) object and, for each property within that object, remove any occurrence of that property within nested objects.
 
 Dependencies
