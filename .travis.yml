@@ -1,7 +1,7 @@
 
 language: c
 
-before_script: sudo apt-get install dejagnu && echo set verbose 9 > ~/.dejagnurc
+before_script: sudo apt-get install dejagnu autoconf-archive && echo set verbose 9 > ~/.dejagnurc
 
-script: ./autogen.sh && ./configure && make clean && make all && make check
+script: ./autogen.sh && CFLAGS=" -Wall -Wextra " ./configure && make clean && make all && make check
 
