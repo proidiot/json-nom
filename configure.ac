@@ -34,11 +34,12 @@ AC_SEARCH_LIBS([yajl_tree_parse], [yajl yajl_s], , AC_MSG_ERROR([Either a dynami
 
 # Checks for header files.
 AC_CHECK_HEADER([argp.h], , AC_MSG_ERROR([Unable to find argp.h]))
+AC_CHECK_HEADER([stdbool.h], , AC_MSG_ERROR([Unable to find stdbool.h]))
 AC_CHECK_HEADER([stdlib.h], , AC_MSG_ERROR([Unable to find stdlib.h]))
 AC_CHECK_HEADER([string.h], , AC_MSG_ERROR([Unable to find string.h]))
 
 # Checks for typedefs, structures, and compiler characteristics.
-AC_CHECK_HEADER_STDBOOL
+#AC_CHECK_HEADER_STDBOOL
 AC_TYPE_SIZE_T
 
 # Checks for library functions.
