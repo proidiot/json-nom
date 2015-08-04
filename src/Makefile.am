@@ -20,7 +20,10 @@
 
 bin_PROGRAMS = json-nom
 
-json_nom_SOURCES = main.c
+json_nom_SOURCES = main.c \
+		   nom.h nom.c \
+		   file_dump.h file_dump.c \
+		   yajl_tree_print.h yajl_tree_print.c
 
 CLEANFILES = *.gcda *.gcno *.gcov
 

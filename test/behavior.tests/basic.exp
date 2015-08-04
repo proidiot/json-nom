@@ -1,0 +1,33 @@
+if 0 {
+ Copyright 2015 Charles Southerland.
+
+ This file is part of json-nom.
+
+ json-nom is free software: you can redistribute it and/or modify it under the
+ terms of the GNU General Public License as published by the Free Software
+ Foundation, either version 3 of the License, or (at your option) any later
+ version.
+
+ json-nom is distributed in the hope that it will be useful, but WITHOUT ANY
+ WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License along with
+ json-nom.  If not, see <http://www.gnu.org/licenses/>.
+
+ More information about json-nom can be found at
+ <https://github.com/proidiot/json-nom/>.
+}
+
+set timeout 5
+
+spawn ../src/json-nom
+
+send "{}"
+
+expect {
+	"{}" {pass "Basic behavior test is successful"}
+	eof {fail "Basic behavior test reached EOF prematurely"}
+	timeout {unknown "Basic behavior test timeout"}
+}
+

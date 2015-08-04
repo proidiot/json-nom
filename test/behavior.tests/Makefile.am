@@ -18,5 +18,7 @@
 # <https://github.com/proidiot/json-nom/>.
 #
 
-EXTRA_DIST = help.exp version.exp.in
+EXTRA_DIST = version.exp.in \
+	     help.exp \
+	     basic.exp
 
